@@ -1,0 +1,17 @@
+{
+  "name": "@vue/runtime-dom",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "module": "dist/runtime-dom.es.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "buildOptions": {
+    "name": "VueRuntimeDOM",
+    "formats": ["es", "iife"]
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

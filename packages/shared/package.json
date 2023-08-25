@@ -1,0 +1,17 @@
+{
+  "name": "@vue/shared",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "module": "dist/shared.es.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "buildOptions": {
+    "name": "VueShared",
+    "formats": ["cjs", "es"]
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

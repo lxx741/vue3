@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script src="../dist/reactivity.iife.js"></script>
+    <script>
+      let {
+        computed,
+        toRef,
+        toRefs,
+        ref,
+        shallowRef,
+        effect,
+        reactive,
+        shallowReactive,
+        readonly,
+        shallowReadonly,
+      } = VueReactivity;
+
+      let count = ref(1);
+
+      let double = computed(() => {
+        console.log("run");
+        return count.value * 2;
+      });
+
+      effect(() => {
+        console.log(double.value);
+      });
+
+      count.value = 100;
+
+      // console.log(double.value);
+      // console.log(double.value);
+      // count.value = 20;
+      // console.log(double.value);
+    </script>
+  </body>
+</html>

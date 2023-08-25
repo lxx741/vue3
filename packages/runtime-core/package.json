@@ -1,0 +1,17 @@
+{
+  "name": "@vue/runtime-core",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "module": "dist/runtime-core.es.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "buildOptions": {
+    "name": "VueRuntimeCore",
+    "formats": ["es", "iife"]
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
